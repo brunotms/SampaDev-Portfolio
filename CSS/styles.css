@@ -1,35 +1,119 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
+*{
+    margin:0;
     padding: 0;
     outline: 0;
-}
+    box-sizing: border-box;
+  }
 
-body {
+  body{
     font-family: 'Roboto', sans-serif;
-}
+  }
 
-.nav {
-    background-color: rgb(38, 38, 38);
+  .nav{
+    background-color: #181818;
     height: 80px;
     width: 100%;
     display: flex;
     justify-content: flex-end;
-}
+  }
 
-.nav-list {
+  .nav-list{
     display: flex;
     align-items: center;
     list-style: none;
-    margin-right: 24px;
-}
+    margin-right: 28px;
+  }
 
-.nav-list a {
+  .nav-list a{
     text-decoration: none;
     color: #DDD;
     padding: 20px;
+  }
+
+  .nav-list a:hover{
+    color: #FFFFFF;
+  }
+
+  .main{
+    width: 100%;
+    background-color: #000;
+    height: calc(100vh - 80px);
+    background-image: url(../images/programador.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+  }
+
+  .main h1{
+    color: #FFFFFF;
+    font-size: 54px;
+  }
+
+  .main p {
+    font-size: 24px;
+    font-style: italic;
+    color: #1e96FC;
+    margin-top: 10px;
+    margin-bottom: 35px;
+  }
+
+  .call-to-action{
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border:0;
+    padding: 10px;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.9s;
+  }
+
+.call-to-action:hover{
+    transform: scale(1.1);
 }
 
-.nav-list a:hover {
-    color: #FFFFFF;
+  .main a{
+    text-decoration: none;
+    color: #181818;
+  }
+
+.about{
+   background-color: #FFFFFF;
+   width: 100%;
+   padding-left: 5%;
+   padding-right: 5%;
+   padding-top: 40px;
+   padding-bottom: 40px;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.about div{
+    max-width: 50%;
+    padding-right: 40px;
+}
+
+.about p{
+    text-indent: 20px;
+}
+
+.about img{
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.about div h2{
+   font-size: 32px;
+   padding-left: 0;
+   margin-bottom: 14px;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 9;
 }
