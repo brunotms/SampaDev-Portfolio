@@ -9,6 +9,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+html{
+scroll-behavior: smooth;
+}
+
 .nav {
   background-color: #181818;
   height: 80px;
@@ -151,7 +155,7 @@ body {
 }
 
 .projects img {
-  width: 22%;
+  width: 21%;
   margin-left: 0.5%;
   margin-right: 0.5%;
   opacity: 0.8;
@@ -169,7 +173,7 @@ body {
   border-radius: 100px;
   font-size: 18px;
   color: #FFFFFF;
-  margin-top: 18px;
+  margin-top: 15px;
   cursor: pointer;
 }
 
