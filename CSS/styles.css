@@ -9,8 +9,8 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-html{
-scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 .nav {
@@ -231,4 +231,72 @@ footer p a:hover {
   color: #DDD;
   padding: 20px;
   text-align: center;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1020px) {
+
+  /* Main */
+  .main h1 {
+    font-size: 45px;
+  }
+
+  .main p {
+    font-size: 18px;
+  }
+
+  /* Sobre */
+  .about {
+    flex-direction: column;
+    padding: 40px 0 0 0;
+  }
+
+  .about div {
+    padding-bottom: 40px;
+    max-width: 80%;
+  }
+
+  .about img {
+    max-width: 80%;
+  }
+
+  /* Projetos */
+  .projects img {
+    width: 25%;
+  }
+
+  /* Footer */
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer .titulo {
+    margin-bottom: 15px;
+  }
+
+  footer nav a {
+    margin-bottom: 6px;
+    font-size: 14px;
+  }
+
+  footer div p {
+    margin-bottom: 8px;
+    font-size: 12px;
+
+  }
+
+  #link {
+    display: block;
+    word-break: break-all;
+  }
+
+  #fraseP {
+    font-size: 13px;
+  }
+
+  #copyright {
+    font-size: 12px;
+    word-wrap: break-word;
+  }
 }
